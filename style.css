@@ -1,0 +1,83 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(8,8,8,.92);
+  border-bottom: 1px solid #242424;
+  backdrop-filter: blur(10px);
+}
+nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo { font-weight: 900; letter-spacing: 3px; }
+.links { display: flex; gap: 22px; }
+.links a { color: #ddd; text-decoration: none; }
+.links a:hover { color: white; }
+.hero {
+  min-height: 88vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 70px 24px;
+  background: radial-gradient(circle at center, #292929 0%, #080808 60%);
+}
+.hero h1 {
+  font-size: clamp(3rem, 9vw, 7rem);
+  line-height: .95;
+  margin: 10px 0 20px;
+  letter-spacing: -3px;
+}
+.tagline { font-size: 1.2rem; color: #ccc; margin-bottom: 30px; }
+.eyebrow { font-size: .75rem; letter-spacing: 4px; color: #aaa; font-weight: bold; }
+.button {
+  display: inline-block;
+  padding: 13px 24px;
+  border: 1px solid #777;
+  border-radius: 999px;
+  color: white;
+  text-decoration: none;
+}
+.section { max-width: 1000px; margin: auto; padding: 100px 24px; }
+.section h2 { font-size: clamp(2rem, 5vw, 4rem); margin: 8px 0 20px; }
+.section > p:not(.eyebrow) { max-width: 720px; color: #c8c8c8; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 35px;
+}
+.cards article {
+  padding: 28px;
+  border: 1px solid #292929;
+  border-radius: 18px;
+  background: #111;
+}
+.cards h3 { margin-top: 0; font-size: 1.4rem; }
+.cards p { color: #bbb; }
+.contact { padding-bottom: 130px; }
+footer {
+  text-align: center;
+  padding: 28px 20px;
+  border-top: 1px solid #242424;
+  color: #888;
+  font-size: .9rem;
+}
+@media (max-width: 700px) {
+  .links { gap: 10px; font-size: .85rem; }
+  .cards { grid-template-columns: 1fr; }
+  .hero h1 { letter-spacing: -2px; }
+}
