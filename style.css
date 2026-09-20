@@ -23,7 +23,13 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.logo { font-weight: 900; letter-spacing: 3px; }
+.logo {
+  font-weight: 900;
+  letter-spacing: 4px;
+  font-size: 1.15rem;
+  color: white;
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
+}
 .links { display: flex; gap: 22px; }
 .links a { color: #ddd; text-decoration: none; }
 .links a:hover { color: white; }
