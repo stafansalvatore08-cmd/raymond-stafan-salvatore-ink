@@ -63,11 +63,21 @@ nav {
 .eyebrow { font-size: .75rem; letter-spacing: 4px; color: #aaa; font-weight: bold; }
 .button {
   display: inline-block;
-  padding: 13px 24px;
-  border: 1px solid #777;
+  padding: 15px 30px;
+  border: 1px solid #888;
   border-radius: 999px;
   color: white;
   text-decoration: none;
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: white;
+  color: #080808;
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(255, 255, 255, 0.15);
 }
 .section { max-width: 1000px; margin: auto; padding: 100px 24px; }
 .section h2 { font-size: clamp(2rem, 5vw, 4rem); margin: 8px 0 20px; }
