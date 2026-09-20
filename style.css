@@ -30,9 +30,38 @@ nav {
   color: white;
   text-shadow: 0 0 18px rgba(255, 255, 255, 0.18);
 }
-.links { display: flex; gap: 22px; }
-.links a { color: #ddd; text-decoration: none; }
-.links a:hover { color: white; }
+.links {
+  display: flex;
+  gap: 26px;
+}
+
+.links a {
+  color: #aaa;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 1px;
+  background: white;
+  transition: width 0.3s ease;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
 .hero {
   min-height: 92vh;
   display: grid;
