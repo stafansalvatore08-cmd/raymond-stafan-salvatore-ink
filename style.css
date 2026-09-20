@@ -195,3 +195,8 @@ footer {
     max-width: 100%;
   }
 }
+.featured-title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: -2px;
+  text-transform: uppercase;
+}
