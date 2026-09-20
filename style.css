@@ -28,12 +28,30 @@ nav {
 .links a { color: #ddd; text-decoration: none; }
 .links a:hover { color: white; }
 .hero {
-  min-height: 88vh;
+  min-height: 92vh;
   display: grid;
   place-items: center;
   text-align: center;
-  padding: 70px 24px;
-  background: radial-gradient(circle at center, #292929 0%, #080808 60%);
+  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 40%, #3a3a3a 0%, #151515 30%, #080808 70%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+  filter: blur(80px);
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 .hero h1 {
   font-size: clamp(3rem, 9vw, 7rem);
