@@ -61,13 +61,29 @@ nav {
   margin-top: 35px;
 }
 .cards article {
-  padding: 28px;
-  border: 1px solid #292929;
+  padding: 30px;
+  border: 1px solid #333;
   border-radius: 18px;
-  background: #111;
+  background: linear-gradient(145deg, #151515, #0b0b0b);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, border-color 0.3s ease;
 }
-.cards h3 { margin-top: 0; font-size: 1.4rem; }
-.cards p { color: #bbb; }
+
+.cards article:hover {
+  transform: translateY(-8px);
+  border-color: #777;
+}
+
+.cards h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+}
+
+.cards p {
+  color: #aaa;
+}
+
 .contact { padding-bottom: 130px; }
 footer {
   text-align: center;
