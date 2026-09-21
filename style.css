@@ -217,3 +217,11 @@ footer {
   color: #080808;
   transform: translateY(-3px);
 }
+.profile-image {
+  width: 220px;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto 25px;
+  border-radius: 12px;
+  }
